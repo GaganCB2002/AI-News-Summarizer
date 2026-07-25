@@ -1,7 +1,9 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || '/api/v1',
+  baseURL: import.meta.env.PROD 
+    ? 'https://ai-news-summarizer-s0q8.onrender.com/api/v1' 
+    : (import.meta.env.VITE_API_URL || '/api/v1'),
   headers: {
     'Content-Type': 'application/json',
   },
