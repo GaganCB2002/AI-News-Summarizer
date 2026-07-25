@@ -7,7 +7,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:8000',
+        target: 'https://ai-news-summarizer-s0q8.onrender.com',
         changeOrigin: true,
       },
     },
