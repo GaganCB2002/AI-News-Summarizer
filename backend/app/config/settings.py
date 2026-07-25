@@ -22,7 +22,7 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 1440
     REFRESH_TOKEN_EXPIRE_DAYS: int = 7
 
-    CORS_ORIGINS: str = "http://localhost:5173,http://localhost:3000,http://localhost:8000"
+    CORS_ORIGINS: str = "http://localhost:5173,http://localhost:3000,http://localhost:8000,https://ai-news-summarizer-gamma.vercel.app"
 
     NEWS_API_KEY_GNEWS: str = ""
     NEWS_API_KEY_NEWSAPI: str = ""
