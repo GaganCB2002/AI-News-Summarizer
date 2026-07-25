@@ -1,0 +1,65 @@
+/* design-tokens.css - Core variables for the BrieflyAI Design System */
+
+:root {
+  /* Typography */
+  --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  /* Color Palette - Light Mode */
+  --color-primary: #0e5ef5;      /* Deep Blue */
+  --color-primary-hover: #0b4bcc;
+  --color-secondary: #633cf7;    /* Purple */
+  --color-secondary-hover: #4e2bc4;
+  
+  --color-bg-base: #f4f5f8;      /* Light gray/blue tint for background */
+  --color-bg-elevated: #ffffff;
+  --color-bg-glass: rgba(255, 255, 255, 0.7);
+  --color-bg-glass-heavy: rgba(255, 255, 255, 0.9);
+  
+  --color-text-primary: #0a0e17; /* Very dark blue/black */
+  --color-text-secondary: #4b5563; /* Gray */
+  --color-text-muted: #9ca3af;   /* Light Gray */
+  
+  --color-border: #e5e7eb;       
+  --color-error: #ef4444;        
+  --color-success: #10b981;      
+  
+  --color-accent-light-blue: #e8f0fe;
+  --color-accent-light-purple: #f3e8ff;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+  --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+  
+  /* Borders */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+  --radius-full: 9999px;
+  
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 300ms ease-in-out;
+}
+
+[data-theme='dark'] {
+  --color-bg-base: #0f1117;      /* Deep dark blue */
+  --color-bg-elevated: #161a23;  
+  --color-bg-glass: rgba(22, 26, 35, 0.7);
+  --color-bg-glass-heavy: rgba(22, 26, 35, 0.9);
+  
+  --color-text-primary: #f8fafc; 
+  --color-text-secondary: #cbd5e1; 
+  --color-text-muted: #64748b;   
+  
+  --color-border: #2a3143;       
+  
+  --color-accent-light-blue: rgba(14, 94, 245, 0.15);
+  --color-accent-light-purple: rgba(99, 60, 247, 0.15);
+  
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}

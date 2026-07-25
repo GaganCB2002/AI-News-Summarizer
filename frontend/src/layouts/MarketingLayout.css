@@ -1,0 +1,90 @@
+.marketing-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.marketing-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 72px;
+  z-index: 100;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-bg-glass-heavy);
+}
+
+.marketing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--color-text-secondary);
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--color-primary);
+}
+
+.nav-link.active {
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 24px; /* Align with header bottom */
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle:hover {
+  color: var(--color-text-primary);
+}
+
+.marketing-main {
+  flex: 1;
+  margin-top: 72px; /* Offset for fixed header */
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
