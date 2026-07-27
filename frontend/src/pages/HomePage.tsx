@@ -255,7 +255,7 @@ const HomePage: React.FC = () => {
           <div className="news-header-row">
             <div>
               <span className="section-label">Live Feed</span>
-              <h2 className="section-title" style={{ marginBottom: 0 }}>Today's News</h2>
+              <h2 className="section-title" style={{ marginBottom: 0 }}>BrieflyAI</h2>
               <p className="section-sub" style={{ marginTop: '0.5rem' }}>Real-time updates across every category.</p>
             </div>
             <Link to="/discover" style={{
